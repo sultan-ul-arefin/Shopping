@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- needs to be right at the top to prevent Chrome from reloading favicon on every route change -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>shopping</title>
+    <base href="/" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#4e8ef7" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p>
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <noscript>
+      <p>This page requires JavaScript to work properly. Please enable JavaScript in your browser.</p>
+    </noscript>
+    <!-- Include Cordova script only when needed -->
+    <script>
+      if (/^app/.test(location.host)) {
+        /**
+         * https://github.com/angular/angular/issues/22509
+         * Prevent cordova.js 5.2.4+ routing bug
+         **/
+        window.addEventListener = function () {
+          EventTarget.prototype.addEventListener.apply(this, arguments);
+        };
+        window.removeEventListener = function () {
+          EventTarget.prototype.removeEventListener.apply(this, arguments);
+        };
+        document.addEventListener = function () {
+          EventTarget.prototype.addEventListener.apply(this, arguments);
+        };
+        document.removeEventListener = function () {
+          EventTarget.prototype.removeEventListener.apply(this, arguments);
+        };
+        document.write('<script src="cordova.js"><\/script>');
+      }
+    </script>
+    <app-root></app-root>
+  </body>
+</html>

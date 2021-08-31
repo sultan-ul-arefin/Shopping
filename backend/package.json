@@ -1,0 +1,35 @@
+{
+  "name": "mean-stack-backend",
+  "version": "1.0.0",
+  "description": "WebSpace Ecommerce SaaS - Node.js and MongoDB in the backend and Angular 11 in frontend.",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sultan-ul-arefin/mean-stack/mean-stack-backend.git"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "start:dev": "nodemon ./index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-rate-limit": "^5.2.6",
+    "joi": "^17.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.10.15",
+    "nodemailer": "^6.4.16",
+    "rootpath": "^0.1.2",
+    "swagger-ui-express": "^4.1.4",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

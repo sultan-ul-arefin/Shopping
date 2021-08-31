@@ -1,0 +1,50 @@
+{
+  "generator-ngx-rocket": {
+    "version": "9.2.0",
+    "props": {
+      "location": "path",
+      "strict": false,
+      "skipInstall": false,
+      "skipQuickstart": false,
+      "initGit": true,
+      "usePrefix": true,
+      "target": [
+        "web",
+        "cordova",
+        "electron"
+      ],
+      "pwa": true,
+      "mobile": [
+        "ios",
+        "android"
+      ],
+      "desktop": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "ui": "material",
+      "layout": "side-menu",
+      "auth": true,
+      "lazy": true,
+      "angulartics": false,
+      "languages": [
+        "en-US",
+        "it-IT"
+      ],
+      "tools": [
+        "prettier",
+        "compodoc",
+        "puppeteer"
+      ],
+      "utility": [
+        "lodash",
+        "moment"
+      ],
+      "deploy": "github",
+      "appName": "shopping",
+      "projectName": "shopping",
+      "packageManager": "npm"
+    }
+  }
+}

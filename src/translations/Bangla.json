@@ -1,0 +1,16 @@
+{
+  "APP_NAME": "shopping",
+  "About": "Informazioni",
+  "Hello world !": "Ciao Mondo !",
+  "Home": "Inizio",
+  "Logged in as": "Autenticato come",
+  "Login": "Entrare",
+  "Logout": "Uscire",
+  "Password": "Password",
+  "Password is required": "La password é richiesta",
+  "Username": "Identificativo",
+  "Username is required": "L'identificativo é richiesto",
+  "Username or password incorrect.": "Identificativo o password incorretti.",
+  "Remember me": "Ricordami",
+  "Version": "Versione"
+}
